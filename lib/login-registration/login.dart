@@ -9,7 +9,12 @@ class login extends StatelessWidget {
       appBar: AppBar(
         title: Text("Login"),
       ),
-      body: Container(),
+      body: Container(
+        padding: EdgeInsets.all(10),
+        child: Column(
+          children: [],
+        ),
+      ),
     );
   }
 }
