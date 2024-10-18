@@ -71,13 +71,13 @@ class _oneboardingState extends State<oneboarding> {
                     },
                     style: ElevatedButton.styleFrom(
                       fixedSize: Size(Get.width, 50),
-                      backgroundColor: Color.fromARGB(255, 217, 195, 220),
+                      backgroundColor: Color.fromARGB(255, 14, 18, 68),
                     ),
                     child: Text(
                       "Continue",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Colors.black,
+                        color: Colors.white,
                       ),
                     ),
                   ),
@@ -165,13 +165,13 @@ class _oneboardingState extends State<oneboarding> {
                     },
                     style: ElevatedButton.styleFrom(
                       fixedSize: Size(Get.width, 50),
-                      backgroundColor: Color.fromARGB(255, 217, 195, 220),
+                      backgroundColor: Color.fromARGB(255, 14, 18, 68),
                     ),
                     child: Text(
                       "Continue",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Colors.black,
+                        color: Colors.white,
                       ),
                     ),
                   ),
@@ -223,7 +223,7 @@ class _oneboardingState extends State<oneboarding> {
                 child: Image(
                   width: Get.width,
                   height: Get.height / 2,
-                  image: AssetImage(''),
+                  image: AssetImage('assets/car.jpg'),
                 ),
               ),
               const Padding(
@@ -256,13 +256,13 @@ class _oneboardingState extends State<oneboarding> {
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
                         fixedSize: Size(Get.width, 50),
-                        backgroundColor: Color.fromARGB(255, 217, 195, 220),
+                        backgroundColor: Color.fromARGB(255, 14, 18, 68),
                       ),
                       child: Text(
                         "Continue",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.black,
+                          color: Colors.white,
                         ),
                       )),
                 ),

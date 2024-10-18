@@ -29,7 +29,7 @@ class _splashscreenState extends State<splashscreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 217, 195, 220),
+      backgroundColor: Color.fromARGB(255, 14, 18, 68),
       body: Center(
         child: const Text(
           'Attendance',

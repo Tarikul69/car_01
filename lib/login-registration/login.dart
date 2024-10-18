@@ -59,17 +59,28 @@ class login extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            InkWell(
-              onTap: () {
-                //Get.to(forgotpassword());
-              },
-              child: Text(
-                "Forgot Password?",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 173, 4, 4),
+            Row(
+              children: [
+                Checkbox(
+                  focusColor: Color.fromARGB(255, 14, 18, 68),
+                  value: true,
+                  onChanged: (value) {},
                 ),
-              ),
+                Text("Keepme Logged In"),
+                Spacer(),
+                InkWell(
+                  onTap: () {
+                    //Get.to(forgotpassword());
+                  },
+                  child: Text(
+                    "Forgot Password?",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 173, 4, 4),
+                    ),
+                  ),
+                ),
+              ],
             ),
             const SizedBox(
               height: 20,
@@ -80,7 +91,7 @@ class login extends StatelessWidget {
               },
               style: ElevatedButton.styleFrom(
                   fixedSize: Size(MediaQuery.of(context).size.width, 60),
-                  backgroundColor: Color.fromARGB(255, 217, 195, 220),
+                  backgroundColor: Color.fromARGB(255, 14, 18, 68),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
@@ -88,9 +99,9 @@ class login extends StatelessWidget {
               child: Text(
                 "Login",
                 style: TextStyle(
-                  color: Colors.black,
+                  color: Color.fromARGB(255, 248, 247, 247),
                   fontWeight: FontWeight.bold,
-                  fontSize: 15,
+                  fontSize: 18,
                 ),
               ),
             ),
@@ -130,43 +141,24 @@ class login extends StatelessWidget {
               height: 20,
             ),
             //Spacer(),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                fixedSize: Size(MediaQuery.of(context).size.width, 60),
-                backgroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                ),
-              ),
-              child: Text(
-                "Sign in with Google",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                fixedSize: Size(MediaQuery.of(context).size.width, 60),
-                backgroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                ),
-              ),
-              child: Text(
-                "Sign in with Apple",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Divider(
+                    thickness: 100,
+                    color: Colors.amber,
+                  ),
+                  Text("or continue with"),
+                  Divider(
+                    thickness: 100,
+                    color: Colors.amber,
+                  )
+                ],
               ),
             ),
+
             Spacer()
           ],
         ),
