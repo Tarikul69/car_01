@@ -1,4 +1,5 @@
 import 'package:car_01/login-registration/registration.dart';
+import 'package:car_01/widgets/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -101,7 +102,7 @@ class login extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                //Get.offAll(navigationbar());
+                Get.offAll(home());
               },
               style: ElevatedButton.styleFrom(
                   fixedSize: Size(MediaQuery.of(context).size.width, 60),
@@ -172,8 +173,10 @@ class login extends StatelessWidget {
                 ],
               ),
             ),
-
-            Spacer()
+            Spacer(),
+            Row(
+              children: [],
+            )
           ],
         ),
       ),
