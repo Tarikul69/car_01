@@ -7,7 +7,6 @@ class login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Container(
         alignment: Alignment.topLeft,
         padding: EdgeInsets.all(20),
@@ -15,6 +14,17 @@ class login extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           //mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(
+              height: MediaQuery.sizeOf(context).height * .12,
+            ),
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(0, 10, 0, 20),
+                child: Image.asset(
+                  'assets/car.jpg',
+                ),
+              ),
+            ),
             //Spacer(),
             Title(
                 color: Colors.black,
