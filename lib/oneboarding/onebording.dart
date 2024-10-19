@@ -36,7 +36,7 @@ class _oneboardingState extends State<oneboarding> {
                 child: Image(
                   width: Get.width,
                   height: Get.height / 2,
-                  image: AssetImage(''),
+                  image: AssetImage('assets/car.jpg'),
                 ),
               ),
               const Padding(
@@ -130,7 +130,7 @@ class _oneboardingState extends State<oneboarding> {
                 child: Image(
                   width: Get.width,
                   height: Get.height / 2,
-                  image: AssetImage(""),
+                  image: AssetImage('assets/car.jpg'),
                 ),
               ),
               const Padding(

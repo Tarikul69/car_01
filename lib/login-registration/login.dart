@@ -1,3 +1,4 @@
+import 'package:car_01/login-registration/registration.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -9,19 +10,20 @@ class login extends StatelessWidget {
     return Scaffold(
       body: Container(
         alignment: Alignment.topLeft,
-        padding: EdgeInsets.all(20),
+        padding: EdgeInsets.all(15),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           //mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-              height: MediaQuery.sizeOf(context).height * .12,
+              height: MediaQuery.sizeOf(context).height * .07,
             ),
             Center(
               child: Padding(
-                padding: const EdgeInsets.fromLTRB(0, 10, 0, 20),
+                padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                 child: Image.asset(
-                  'assets/car.jpg',
+                  height: MediaQuery.sizeOf(context).height * .18,
+                  'assets/car1.jpg',
                 ),
               ),
             ),
@@ -38,6 +40,7 @@ class login extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
+            Text("Email Address"),
             TextFormField(
               decoration: InputDecoration(
                   border: OutlineInputBorder(
@@ -55,6 +58,7 @@ class login extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
+            Text("Confirm Password"),
             TextFormField(
               obscureText: true,
               decoration: InputDecoration(
@@ -133,7 +137,7 @@ class login extends StatelessWidget {
                   ),
                   InkWell(
                     onTap: () {
-                      //Get.to(registration());
+                      Get.to(registration());
                     },
                     child: Text(
                       "Sign Up",

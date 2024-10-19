@@ -29,16 +29,9 @@ class _splashscreenState extends State<splashscreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 14, 18, 68),
+      backgroundColor: Color.fromARGB(255, 252, 252, 252),
       body: Center(
-        child: const Text(
-          'Attendance',
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-            color: Colors.black,
-          ),
-        ),
+        child: Image.asset("assets/car1.jpg"),
       ),
     );
   }
