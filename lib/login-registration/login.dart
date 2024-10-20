@@ -1,3 +1,4 @@
+import 'package:car_01/components/navbar.dart';
 import 'package:car_01/login-registration/registration.dart';
 import 'package:car_01/widgets/home/home.dart';
 import 'package:flutter/material.dart';
@@ -30,14 +31,15 @@ class login extends StatelessWidget {
             ),
             //Spacer(),
             Title(
-                color: Colors.black,
-                child: Text(
-                  "Login",
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                  ),
-                )),
+              color: Colors.black,
+              child: Text(
+                "Login",
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
             SizedBox(
               height: 20,
             ),
@@ -102,7 +104,7 @@ class login extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Get.offAll(home());
+                Get.offAll(navbar());
               },
               style: ElevatedButton.styleFrom(
                   fixedSize: Size(MediaQuery.of(context).size.width, 60),
