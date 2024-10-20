@@ -51,7 +51,21 @@ class home extends StatelessWidget {
                 ),
               ),
             ),
-            Card(),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  card("1"),
+                  card("name"),
+                  card("name"),
+                  card("name"),
+                  card("1"),
+                  card("name"),
+                  card("name"),
+                  card("name"),
+                ],
+              ),
+            ),
           ],
         ),
       ),
