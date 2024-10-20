@@ -16,8 +16,8 @@ class navbar extends StatelessWidget {
           children: [
             home(),
             inventory(),
-            finance(),
             favourits(),
+            finance(),
             profile(),
           ],
         ),
