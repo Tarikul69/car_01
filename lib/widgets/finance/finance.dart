@@ -9,7 +9,7 @@ class finance extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "Finance",
+          "Finance & Insurance",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),

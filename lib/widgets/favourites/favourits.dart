@@ -21,15 +21,17 @@ class favourits extends StatelessWidget {
           child: Column(
             children: [
               Title(
-                  color: Colors.black,
-                  child: Text(
-                    "My Favourites",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
-                  )),
-              favourits_card(context),
-              favourits_card(context),
-              favourits_card(context),
-              favourits_card(context),
+                color: Colors.black,
+                child: Text(
+                  "My Favourites",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                ),
+              ),
+              favourits_card(context, 'assets/car1.jpg'),
+              favourits_card(context, 'assets/toyota.png'),
+              favourits_card(context, 'assets/toyota_01.png'),
+              favourits_card(context, 'assets/toyota.png'),
+              favourits_card(context, 'assets/toyota_01.png'),
             ],
           ),
         ),

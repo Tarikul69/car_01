@@ -12,7 +12,7 @@ Widget card(name) {
   );
 }
 
-Widget favourits_card(context) {
+Widget favourits_card(context, img) {
   return Container(
     child: SizedBox(
       width: MediaQuery.sizeOf(context).width,
@@ -29,10 +29,10 @@ Widget favourits_card(context) {
                 child: Stack(
                   children: [
                     Image.asset(
-                      'assets/car1.jpg',
+                      img,
                       fit: BoxFit.cover,
                       width: MediaQuery.sizeOf(context).width,
-                      height: MediaQuery.sizeOf(context).height,
+                      //height: MediaQuery.sizeOf(context).height,
                     ),
                     Positioned(
                       left: 5,
@@ -86,7 +86,11 @@ Widget favourits_card(context) {
                         textAlign: TextAlign.left,
                       ),
                       Text("data"),
-                      Text("data")
+                      Container(
+                        color: Colors.grey,
+                        padding: EdgeInsets.all(4),
+                        child: Text("data"),
+                      )
                     ],
                   )
                 ],
