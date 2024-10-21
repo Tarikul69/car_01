@@ -23,13 +23,75 @@ Widget favourits_card(context) {
           children: [
             SizedBox(
               width: MediaQuery.sizeOf(context).width,
-              height: 100,
-              child: Card(
-                //margin: EdgeInsets.all(5.0),
-                child: Image.asset('assets/car1.jpg'),
+              height: 160,
+              child: Container(
+                margin: EdgeInsets.all(5.0),
+                child: Stack(
+                  children: [
+                    Image.asset(
+                      'assets/car1.jpg',
+                      fit: BoxFit.cover,
+                      width: MediaQuery.sizeOf(context).width,
+                      height: MediaQuery.sizeOf(context).height,
+                    ),
+                    Positioned(
+                      left: 5,
+                      bottom:
+                          120, //give the values according to your requirement
+                      child: Icon(
+                        Icons.favorite,
+                        color: Colors.red,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-            Text("mycard"),
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Column(
+                    children: [
+                      Title(
+                        color: Colors.black,
+                        child: Text(
+                          "Hyundai",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.left,
+                        ),
+                      ),
+                      Text(
+                        "data",
+                        textAlign: TextAlign.left,
+                      ),
+                      Text("data"),
+                      Text("data")
+                    ],
+                  ),
+                  Spacer(),
+                  Column(
+                    children: [
+                      Title(
+                        color: Colors.black,
+                        child: Text(
+                          "Hyundai",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.left,
+                        ),
+                      ),
+                      Text(
+                        "data",
+                        textAlign: TextAlign.left,
+                      ),
+                      Text("data"),
+                      Text("data")
+                    ],
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),

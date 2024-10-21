@@ -33,9 +33,9 @@ class navbar extends StatelessWidget {
             labelColor: Color.fromARGB(255, 217, 195, 220),
             tabs: [
               Tab(text: "Home", icon: Icon(Icons.home)),
-              Tab(text: "Inventory", icon: Icon(Icons.padding_outlined)),
-              Tab(text: "Favourites", icon: Icon(Icons.work)),
-              Tab(text: "Finance", icon: Icon(Icons.person)),
+              Tab(text: "Inventory", icon: Icon(Icons.inventory_2)),
+              Tab(text: "Favourites", icon: Icon(Icons.favorite)),
+              Tab(text: "Finance", icon: Icon(Icons.wallet)),
               Tab(text: "Profile", icon: Icon(Icons.person)),
             ],
           ),
