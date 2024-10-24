@@ -102,3 +102,29 @@ Widget favourits_card(context, img) {
     ),
   );
 }
+
+Widget finance_card(context) {
+  return Container(
+    child: SizedBox(
+      width: MediaQuery.sizeOf(context).width,
+      height: 100,
+      child: Card(
+          child: Column(
+        children: [
+          Row(
+            children: [
+              Text("data"),
+              ListTile(
+                leading: Icon(Icons.person),
+                title: Title(
+                  color: Colors.black,
+                  child: Text("data"),
+                ),
+              )
+            ],
+          ),
+        ],
+      )),
+    ),
+  );
+}

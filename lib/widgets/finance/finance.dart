@@ -1,3 +1,4 @@
+import 'package:car_01/components/card.dart';
 import 'package:flutter/material.dart';
 
 class finance extends StatelessWidget {
@@ -9,8 +10,16 @@ class finance extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "Finance & Insurance",
+          "Financeing & Insurance",
           style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
+      body: Container(
+        padding: EdgeInsets.all(10),
+        child: Column(
+          children: [
+            finance_card(context),
+          ],
         ),
       ),
     );

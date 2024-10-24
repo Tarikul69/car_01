@@ -29,8 +29,8 @@ class navbar extends StatelessWidget {
             labelStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
             unselectedLabelStyle:
                 TextStyle(fontSize: 10, fontWeight: FontWeight.normal),
-            unselectedLabelColor: Colors.black,
-            labelColor: Color.fromARGB(255, 217, 195, 220),
+            unselectedLabelColor: Color.fromARGB(255, 14, 18, 68),
+            labelColor: Color.fromARGB(255, 14, 18, 68),
             tabs: [
               Tab(text: "Home", icon: Icon(Icons.home)),
               Tab(text: "Inventory", icon: Icon(Icons.inventory_2)),
