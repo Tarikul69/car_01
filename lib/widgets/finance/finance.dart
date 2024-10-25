@@ -13,6 +13,12 @@ class finance extends StatelessWidget {
           "Financeing & Insurance",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
+            child: Icon(Icons.notifications),
+          )
+        ],
       ),
       body: Container(
         padding: EdgeInsets.all(10),
