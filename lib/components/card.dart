@@ -111,17 +111,19 @@ Widget finance_card(context) {
       child: Card(
           child: Column(
         children: [
-          Row(
-            children: [
-              Text("data"),
-              ListTile(
-                leading: Icon(Icons.person),
-                title: Title(
-                  color: Colors.black,
-                  child: Text("data"),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                Text("data"),
+                Spacer(),
+                CircleAvatar(),
+                Text(
+                  "Tarikul Abir",
+                  style: TextStyle(fontWeight: FontWeight.bold),
                 ),
-              )
-            ],
+              ],
+            ),
           ),
         ],
       )),
