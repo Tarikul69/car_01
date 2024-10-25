@@ -107,26 +107,54 @@ Widget finance_card(context) {
   return Container(
     child: SizedBox(
       width: MediaQuery.sizeOf(context).width,
-      height: 100,
+      height: 300,
       child: Card(
-          child: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
+        elevation: 0,
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  SizedBox(
+                    child: Card(
+                      color: Color.fromARGB(115, 87, 231, 145),
+                      elevation: 0,
+                      child: Center(child: Text("Used")),
+                    ),
+                    height: 40,
+                    width: 60,
+                  ),
+                  Spacer(),
+                  CircleAvatar(),
+                  Text(
+                    "Tarikul Abir",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+            ),
+            Row(
               children: [
-                Text("data"),
+                Column(
+                  children: [Text(" Data"), Text("data")],
+                ),
                 Spacer(),
-                CircleAvatar(),
-                Text(
-                  "Tarikul Abir",
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                SizedBox(
+                  height: MediaQuery.sizeOf(context).height / 6,
+                  width: MediaQuery.sizeOf(context).width / 3,
+                  child: Image.asset(
+                    'assets/toyota.png',
+                    fit: BoxFit.fill,
+                    width: MediaQuery.sizeOf(context).width,
+                    //height: MediaQuery.sizeOf(context).height,
+                  ),
                 ),
               ],
-            ),
-          ),
-        ],
-      )),
+            )
+          ],
+        ),
+      ),
     ),
   );
 }
