@@ -22,149 +22,188 @@ class profile extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(
-        children: [
-          CircleAvatar(
-            radius: 70,
-          ),
-          //
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-            child: profilebutton(
-              name: "Name",
-              symble: CupertinoIcons.person,
-              myontap: () {
-                //Get.toNamed(RoutesName.usersmyorder);
-                //Get.to(editprofile());
-              },
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            CircleAvatar(
+              radius: 70,
             ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-            child: profilebutton(
-              name: "Email",
-              symble: CupertinoIcons.person,
-              myontap: () {
-                //Get.toNamed(RoutesName.usersmyorder);
-                //Get.to(myprofile());
-              },
+            //
+            SizedBox(
+              height: 10,
             ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-            child: profilebutton(
-              name: "Phone Number",
-              symble: CupertinoIcons.person,
-              myontap: () {
-                //Get.toNamed(RoutesName.usersmyorder);
-                //Get.to(changepassword());
-              },
-            ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-            child: profilebutton(
-              name: "Password",
-              symble: CupertinoIcons.person,
-              myontap: () {
-                //Get.toNamed(RoutesName.usersmyorder);
-                //Get.to(myprofile());
-              },
-            ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          TextButton(
-            autofocus: false,
-            style: ButtonStyle(),
-            onPressed: () {
-              Get.bottomSheet(
-                Material(
-                  borderRadius: BorderRadius.circular(25),
-                  child: Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: Column(
-                      children: [
-                        Container(
-                          margin: EdgeInsets.only(top: 5),
-                          height: 3,
-                          width: Get.width / 5,
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(100),
-                          ),
-                        ),
-                        ListTile(
-                          title: Text(
-                            "Logout",
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ),
-                          subtitle: Text(""),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        SizedBox(
-                          height: 50,
-                          width: Get.width,
-                          child: ElevatedButton(
-                            style: ButtonStyle(),
-                            onPressed: () {
-                              Get.offAll(login());
-                            },
-                            child: Text(
-                              "Logout",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                                color: Colors.black,
-                              ),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          height: 15,
-                        ),
-                        SizedBox(
-                          height: 50,
-                          width: Get.width,
-                          child: ElevatedButton(
-                            style: ButtonStyle(),
-                            onPressed: () {},
-                            child: Text(
-                              "Cancel",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              );
-            },
-            child: Text(
-              "Logout",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 15,
-                color: const Color.fromARGB(255, 171, 6, 6),
+            Container(
+              child: profilebutton(
+                name: "Name",
+                symble: CupertinoIcons.person_alt,
+                myontap: () {
+                  //Get.toNamed(RoutesName.usersmyorder);
+                  //Get.to(editprofile());
+                },
               ),
             ),
-          ),
-        ],
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              child: profilebutton(
+                name: "Email",
+                symble: Icons.email,
+                myontap: () {
+                  //Get.toNamed(RoutesName.usersmyorder);
+                  //Get.to(myprofile());
+                },
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              child: profilebutton(
+                name: "Phone Number",
+                symble: CupertinoIcons.phone_circle_fill,
+                myontap: () {
+                  //Get.toNamed(RoutesName.usersmyorder);
+                  //Get.to(changepassword());
+                },
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              child: profilebutton(
+                name: "Password",
+                symble: Icons.password,
+                myontap: () {
+                  //Get.toNamed(RoutesName.usersmyorder);
+                  //Get.to(myprofile());
+                },
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              child: profilebutton(
+                name: "Settings",
+                symble: Icons.settings,
+                myontap: () {
+                  //Get.toNamed(RoutesName.usersmyorder);
+                  //Get.to(myprofile());
+                },
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              child: profilebutton(
+                name: "Favourit",
+                symble: Icons.favorite_border_sharp,
+                myontap: () {
+                  //Get.toNamed(RoutesName.usersmyorder);
+                  //Get.to(myprofile());
+                },
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              child: profilebutton(
+                name: "Saved Items",
+                symble: Icons.save,
+                myontap: () {
+                  //Get.toNamed(RoutesName.usersmyorder);
+                  //Get.to(myprofile());
+                },
+              ),
+            ),
+            TextButton(
+              autofocus: false,
+              style: ButtonStyle(),
+              onPressed: () {
+                Get.bottomSheet(
+                  Material(
+                    borderRadius: BorderRadius.circular(25),
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Column(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(top: 5),
+                            height: 3,
+                            width: Get.width / 5,
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(100),
+                            ),
+                          ),
+                          ListTile(
+                            title: Text(
+                              "Logout",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            subtitle: Text(""),
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          SizedBox(
+                            height: 50,
+                            width: Get.width,
+                            child: ElevatedButton(
+                              style: ButtonStyle(),
+                              onPressed: () {
+                                Get.offAll(login());
+                              },
+                              child: Text(
+                                "Logout",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          SizedBox(
+                            height: 50,
+                            width: Get.width,
+                            child: ElevatedButton(
+                              style: ButtonStyle(),
+                              onPressed: () {},
+                              child: Text(
+                                "Cancel",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                );
+              },
+              child: Text(
+                "Logout",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15,
+                  color: const Color.fromARGB(255, 171, 6, 6),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

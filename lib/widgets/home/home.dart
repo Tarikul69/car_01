@@ -1,4 +1,3 @@
-import 'package:car_01/components/navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:car_01/components/card.dart';
 
@@ -49,7 +48,7 @@ class home extends StatelessWidget {
               trailing: InkWell(
                 child: Text(
                   "View All",
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: 18),
                 ),
               ),
             ),
