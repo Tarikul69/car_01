@@ -1,3 +1,5 @@
+import 'package:car_01/components/navbar.dart';
+import 'package:car_01/widgets/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -46,7 +48,7 @@ class forgetpassword extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                //Get.to(resetpin());
+                Get.to(navbar());
               },
               style: ElevatedButton.styleFrom(
                 shape: ContinuousRectangleBorder(
