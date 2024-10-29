@@ -1,4 +1,5 @@
 import 'package:car_01/components/navbar.dart';
+import 'package:car_01/login-registration/forgetpassword.dart';
 import 'package:car_01/login-registration/registration.dart';
 import 'package:car_01/widgets/home/home.dart';
 import 'package:flutter/material.dart';
@@ -87,7 +88,7 @@ class login extends StatelessWidget {
                 Spacer(),
                 InkWell(
                   onTap: () {
-                    //Get.to(forgotpassword());
+                    Get.to(forgetpassword());
                   },
                   child: Text(
                     "Forgot Password?",
