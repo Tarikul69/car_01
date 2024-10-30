@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//#########################################################
 Widget card(img, context) {
   return Container(
     child: SizedBox(
@@ -32,6 +33,7 @@ Widget card(img, context) {
   );
 }
 
+//#########################################################
 Widget favourits_card(context, img) {
   return Container(
     child: SizedBox(
@@ -123,6 +125,7 @@ Widget favourits_card(context, img) {
   );
 }
 
+//###############################################################
 Widget finance_card(context) {
   return Container(
     child: SizedBox(
@@ -166,7 +169,7 @@ Widget finance_card(context) {
                   child: Image.asset(
                     'assets/toyota.png',
                     fit: BoxFit.fill,
-                    width: MediaQuery.sizeOf(context).width,
+                    width: MediaQuery.sizeOf(context).width / 3,
                     //height: MediaQuery.sizeOf(context).height,
                   ),
                 ),
@@ -174,6 +177,61 @@ Widget finance_card(context) {
             )
           ],
         ),
+      ),
+    ),
+  );
+}
+
+//#######################################################################
+Widget summer_sale(context) {
+  return Container(
+    color: const Color.fromARGB(255, 207, 192, 192),
+    padding: EdgeInsets.all(0),
+    child: SizedBox(
+      width: MediaQuery.sizeOf(context).width,
+      height: MediaQuery.sizeOf(context).height / 5,
+      child: Stack(
+        children: [
+          Container(
+            width: MediaQuery.sizeOf(context).width / 3,
+            height: 60,
+            color: Color.fromARGB(255, 14, 18, 68),
+            child: ListTile(
+              title: Text(
+                "\$5,000 Off",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text(
+                "This Summer",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ),
+          Image.asset(
+            'assets/toyota.png',
+            fit: BoxFit.fill,
+            width: MediaQuery.sizeOf(context).width,
+            height: MediaQuery.sizeOf(context).height,
+          )
+        ],
+      ),
+    ),
+  );
+}
+
+//##################################################
+Widget upcoming_appointment(context) {
+  return Container(
+    color: Colors.white,
+    padding: EdgeInsets.all(0),
+    width: MediaQuery.sizeOf(context).width,
+    height: MediaQuery.sizeOf(context).height / 5,
+    child: Card(
+      child: Image.asset(
+        'assets/toyota.png',
+        fit: BoxFit.fill,
+        width: MediaQuery.sizeOf(context).width,
+        height: MediaQuery.sizeOf(context).height,
       ),
     ),
   );
