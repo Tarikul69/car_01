@@ -43,12 +43,15 @@ class home extends StatelessWidget {
             ListTile(
               title: Text(
                 "Featured",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
               ),
               trailing: InkWell(
                 child: Text(
                   "View All",
-                  style: TextStyle(fontSize: 18),
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w200,
+                  ),
                 ),
               ),
             ),
@@ -56,15 +59,26 @@ class home extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  card("1"),
-                  card("name"),
-                  card("name"),
-                  card("name"),
-                  card("1"),
-                  card("name"),
-                  card("name"),
-                  card("name"),
+                  card('assets/toyota.png', context),
+                  card('assets/toyota_01.png', context),
+                  card('assets/toyota_01.png', context),
+                  card('assets/toyota.png', context)
                 ],
+              ),
+            ),
+            ListTile(
+              title: Text(
+                "Summer sale",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+              ),
+              trailing: InkWell(
+                child: Text(
+                  "View All",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w200,
+                  ),
+                ),
               ),
             ),
           ],

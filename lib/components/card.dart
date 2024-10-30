@@ -1,12 +1,32 @@
 import 'package:flutter/material.dart';
 
-Widget card(name) {
+Widget card(img, context) {
   return Container(
     child: SizedBox(
-      height: 100,
-      width: 85,
+      height: MediaQuery.sizeOf(context).height / 5,
+      width: MediaQuery.sizeOf(context).width / 1.5,
       child: Card(
-        child: Text(name),
+        child: Column(
+          children: [
+            Image.asset(
+              img,
+              fit: BoxFit.cover,
+              width: MediaQuery.sizeOf(context).width,
+              height: MediaQuery.sizeOf(context).height / 9.5,
+            ),
+            Spacer(),
+            ListTile(
+              title: Text("Hyundai"),
+              subtitle: Text(" CR-V EX"),
+              trailing: Column(
+                children: [
+                  Title(color: Colors.black, child: Text("Year: 2050")),
+                  Text("MSRP:\$35000")
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     ),
   );
