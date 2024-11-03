@@ -103,6 +103,19 @@ class home extends StatelessWidget {
                   ),
                 ),
               ),
+              Row(
+                children: [
+                  categories("New Cars"),
+                  Spacer(),
+                  categories("Used Cars"),
+                  Spacer(),
+                  categories("Van"),
+                  Spacer(),
+                  categories("Jeep"),
+                  Spacer(),
+                  categories("Jeep"),
+                ],
+              ),
               ListTile(
                 title: Text(
                   "Recommended for you",
@@ -116,6 +129,17 @@ class home extends StatelessWidget {
                       fontWeight: FontWeight.w200,
                     ),
                   ),
+                ),
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    common_card(context, 'assets/toyota_01.png'),
+                    common_card(context, 'assets/toyota.png'),
+                    common_card(context, 'assets/toyota_01.png'),
+                    common_card(context, 'assets/toyota.png'),
+                  ],
                 ),
               ),
               ListTile(

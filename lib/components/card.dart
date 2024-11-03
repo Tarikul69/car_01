@@ -259,3 +259,11 @@ Widget common_card(context, img) {
     ),
   );
 }
+
+Widget categories(cat) {
+  return Container(
+    padding: EdgeInsets.all(10),
+    color: Color.fromARGB(255, 174, 203, 212),
+    child: Text(cat),
+  );
+}
