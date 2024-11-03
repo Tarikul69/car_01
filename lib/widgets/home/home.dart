@@ -17,8 +17,12 @@ class home extends StatelessWidget {
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           subtitle: Text("Texas, USA"),
-          trailing: Icon(Icons.message),
         ),
+        actions: [
+          Icon(Icons.message),
+          Icon(Icons.message),
+          Icon(Icons.message),
+        ],
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -130,6 +134,58 @@ class home extends StatelessWidget {
                 ),
               ),
               upcoming_appointment(context),
+              ListTile(
+                title: Text(
+                  "Reseant Searches",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                ),
+                trailing: InkWell(
+                  child: Text(
+                    "View All",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w200,
+                    ),
+                  ),
+                ),
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    common_card(context, 'assets/toyota.png'),
+                    common_card(context, 'assets/toyota_01.png'),
+                    common_card(context, 'assets/toyota.png'),
+                    common_card(context, 'assets/toyota_01.png'),
+                  ],
+                ),
+              ),
+              ListTile(
+                title: Text(
+                  "Favourites",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                ),
+                trailing: InkWell(
+                  child: Text(
+                    "View All",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w200,
+                    ),
+                  ),
+                ),
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    common_card(context, 'assets/toyota_01.png'),
+                    common_card(context, 'assets/toyota.png'),
+                    common_card(context, 'assets/toyota_01.png'),
+                    common_card(context, 'assets/toyota.png'),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
