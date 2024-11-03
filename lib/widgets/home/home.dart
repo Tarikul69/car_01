@@ -1,5 +1,7 @@
+import 'package:car_01/widgets/home/recent_search.dart';
 import 'package:flutter/material.dart';
 import 'package:car_01/components/card.dart';
+import 'package:get/get.dart';
 
 class home extends StatelessWidget {
   const home({super.key});
@@ -19,9 +21,9 @@ class home extends StatelessWidget {
           subtitle: Text("Texas, USA"),
         ),
         actions: [
+          Icon(Icons.pages),
           Icon(Icons.message),
-          Icon(Icons.message),
-          Icon(Icons.message),
+          Icon(Icons.notifications),
         ],
       ),
       body: SingleChildScrollView(
@@ -160,10 +162,13 @@ class home extends StatelessWidget {
               upcoming_appointment(context),
               ListTile(
                 title: Text(
-                  "Reseant Searches",
+                  "Receant Searches",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
                 ),
                 trailing: InkWell(
+                  onTap: () {
+                    Get.to(recent_search());
+                  },
                   child: Text(
                     "View All",
                     style: TextStyle(
