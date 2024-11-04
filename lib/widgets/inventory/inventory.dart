@@ -76,7 +76,7 @@ Widget inventory_listing(context) {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12.0),
         border: Border.all(
-          color: const Color.fromARGB(255, 91, 90, 90), // Color of the border
+          color: Color.fromARGB(255, 127, 126, 126), // Color of the border
           width: .5,
         ),
       ),

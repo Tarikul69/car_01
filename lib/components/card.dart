@@ -35,90 +35,99 @@ Widget card(img, context) {
 
 //#########################################################
 Widget favourits_card(context, img) {
-  return Container(
-    child: SizedBox(
-      width: MediaQuery.sizeOf(context).width,
-      height: MediaQuery.sizeOf(context).height / 3,
-      child: Card(
-        elevation: 0,
-        child: Column(
-          children: [
-            SizedBox(
-              width: MediaQuery.sizeOf(context).width,
-              height: 160,
-              child: Container(
-                margin: EdgeInsets.all(5.0),
-                child: Stack(
-                  children: [
-                    Image.asset(
-                      img,
-                      fit: BoxFit.cover,
-                      width: MediaQuery.sizeOf(context).width,
-                      //height: MediaQuery.sizeOf(context).height,
-                    ),
-                    Positioned(
-                      left: 5,
-                      bottom:
-                          120, //give the values according to your requirement
-                      child: Icon(
-                        Icons.favorite,
-                        color: Colors.red,
+  return Padding(
+    padding: const EdgeInsets.all(8.0),
+    child: Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(12.0),
+        border: Border.all(
+          color: Color.fromARGB(255, 151, 150, 150), // Color of the border
+          width: .5,
+        ),
+      ),
+      child: SizedBox(
+        width: MediaQuery.sizeOf(context).width,
+        height: MediaQuery.sizeOf(context).height / 3,
+        child: Card(
+          elevation: 0,
+          child: Column(
+            children: [
+              SizedBox(
+                width: MediaQuery.sizeOf(context).width,
+                height: 160,
+                child: Container(
+                  child: Stack(
+                    children: [
+                      Image.asset(
+                        img,
+                        fit: BoxFit.cover,
+                        width: MediaQuery.sizeOf(context).width,
+                        //height: MediaQuery.sizeOf(context).height,
                       ),
+                      Positioned(
+                        left: 5,
+                        bottom:
+                            120, //give the values according to your requirement
+                        child: Icon(
+                          Icons.favorite,
+                          color: Colors.red,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Column(
+                      children: [
+                        Title(
+                          color: Colors.black,
+                          child: Text(
+                            "Hyundai",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.left,
+                          ),
+                        ),
+                        Text(
+                          "data",
+                          textAlign: TextAlign.left,
+                        ),
+                        Text("data"),
+                        Text("data")
+                      ],
                     ),
+                    Spacer(),
+                    Column(
+                      children: [
+                        Title(
+                          color: Colors.black,
+                          child: Text(
+                            "Hyundai",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.left,
+                          ),
+                        ),
+                        Text(
+                          "data",
+                          textAlign: TextAlign.left,
+                        ),
+                        Text("data"),
+                        Container(
+                          color: Colors.grey,
+                          padding: EdgeInsets.all(4),
+                          child: Text("data"),
+                        )
+                      ],
+                    )
                   ],
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Column(
-                    children: [
-                      Title(
-                        color: Colors.black,
-                        child: Text(
-                          "Hyundai",
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.left,
-                        ),
-                      ),
-                      Text(
-                        "data",
-                        textAlign: TextAlign.left,
-                      ),
-                      Text("data"),
-                      Text("data")
-                    ],
-                  ),
-                  Spacer(),
-                  Column(
-                    children: [
-                      Title(
-                        color: Colors.black,
-                        child: Text(
-                          "Hyundai",
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.left,
-                        ),
-                      ),
-                      Text(
-                        "data",
-                        textAlign: TextAlign.left,
-                      ),
-                      Text("data"),
-                      Container(
-                        color: Colors.grey,
-                        padding: EdgeInsets.all(4),
-                        child: Text("data"),
-                      )
-                    ],
-                  )
-                ],
-              ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     ),
