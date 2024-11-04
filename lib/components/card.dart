@@ -137,6 +137,13 @@ Widget favourits_card(context, img) {
 //###############################################################
 Widget finance_card(context) {
   return Container(
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(12.0),
+      border: Border.all(
+        color: Color.fromARGB(255, 127, 126, 126), // Color of the border
+        width: .5,
+      ),
+    ),
     child: SizedBox(
       width: MediaQuery.sizeOf(context).width,
       height: 300,
@@ -144,27 +151,24 @@ Widget finance_card(context) {
         elevation: 0,
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: [
-                  SizedBox(
-                    child: Card(
-                      color: Color.fromARGB(115, 87, 231, 145),
-                      elevation: 0,
-                      child: Center(child: Text("Used")),
-                    ),
-                    height: 40,
-                    width: 60,
+            Row(
+              children: [
+                SizedBox(
+                  child: Card(
+                    color: Color.fromARGB(115, 87, 231, 145),
+                    elevation: 0,
+                    child: Center(child: Text("Used")),
                   ),
-                  Spacer(),
-                  CircleAvatar(),
-                  Text(
-                    "Tarikul Abir",
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
+                  height: 40,
+                  width: 60,
+                ),
+                Spacer(),
+                CircleAvatar(),
+                Text(
+                  "Tarikul Abir",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ],
             ),
             Row(
               children: [

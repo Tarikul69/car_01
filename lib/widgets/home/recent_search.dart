@@ -18,14 +18,14 @@ class recent_search extends StatelessWidget {
         child: Container(
           child: Column(
             children: [
-              card_recent_searches(context),
-              card_recent_searches(context),
-              card_recent_searches(context),
-              card_recent_searches(context),
-              card_recent_searches(context),
-              card_recent_searches(context),
-              card_recent_searches(context),
-              card_recent_searches(context),
+              card_recent_searches(context, 'assets/toyota_01.png'),
+              card_recent_searches(context, 'assets/toyota.png'),
+              card_recent_searches(context, 'assets/toyota_01.png'),
+              card_recent_searches(context, 'assets/toyota.png'),
+              card_recent_searches(context, 'assets/toyota_01.png'),
+              card_recent_searches(context, 'assets/toyota.png'),
+              card_recent_searches(context, 'assets/toyota_01.png'),
+              card_recent_searches(context, 'assets/toyota_01.png'),
             ],
           ),
         ),
@@ -34,8 +34,15 @@ class recent_search extends StatelessWidget {
   }
 }
 
-Widget card_recent_searches(context) {
+Widget card_recent_searches(context, img) {
   return Container(
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(12.0),
+      border: Border.all(
+        color: Color.fromARGB(255, 200, 200, 200), // Color of the border
+        width: .5,
+      ),
+    ),
     width: MediaQuery.sizeOf(context).width,
     height: MediaQuery.sizeOf(context).height / 6.5,
     margin: EdgeInsets.all(2),
@@ -46,7 +53,7 @@ Widget card_recent_searches(context) {
             child: SizedBox(
                 height: 150,
                 width: MediaQuery.sizeOf(context).width / 3.5,
-                child: Image.asset('assets/toyota_01.png')),
+                child: Image.asset(img)),
           ),
           title: Column(
             children: [
