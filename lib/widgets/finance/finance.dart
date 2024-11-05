@@ -1,5 +1,7 @@
+import 'package:car_01/widgets/finance/notification.dart';
 import 'package:car_01/widgets/inventory/inventory.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class finance extends StatelessWidget {
   const finance({super.key});
@@ -16,7 +18,11 @@ class finance extends StatelessWidget {
         actions: [
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
-            child: Icon(Icons.notifications),
+            child: InkWell(
+                onTap: () {
+                  Get.to(notification());
+                },
+                child: Icon(Icons.notifications)),
           )
         ],
       ),
@@ -213,19 +219,22 @@ class finance extends StatelessWidget {
                   ),
                 ),
               ),
-              ElevatedButton(
-                onPressed: () {},
-                child: Text(
-                  "Submit",
-                  style: TextStyle(color: Colors.white),
-                ),
-                style: ElevatedButton.styleFrom(
-                  fixedSize: Size(MediaQuery.of(context).size.width, 60),
-                  backgroundColor: Color.fromARGB(255, 14, 18, 68),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Submit",
+                    style: TextStyle(color: Colors.white),
                   ),
-                  // padding: EdgeInsets.all(0),
+                  style: ElevatedButton.styleFrom(
+                    fixedSize: Size(MediaQuery.of(context).size.width, 60),
+                    backgroundColor: Color.fromARGB(255, 14, 18, 68),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    // padding: EdgeInsets.all(0),
+                  ),
                 ),
               )
             ],
