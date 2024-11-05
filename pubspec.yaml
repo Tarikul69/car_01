@@ -65,6 +65,9 @@ flutter:
     - assets/toyota.png
     - assets/toyota_01.png
     - assets/toyota.png
+    - assets/man.jpg
+    - assets/man1.jpg
+    - assets/man2.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

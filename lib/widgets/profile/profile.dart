@@ -1,4 +1,5 @@
 import 'package:car_01/login-registration/login.dart';
+import 'package:car_01/widgets/profile/edit_profile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -21,6 +22,17 @@ class profile extends StatelessWidget {
             color: Colors.black,
           ),
         ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: InkWell(
+              onTap: () {
+                Get.to(edit_profile());
+              },
+              child: Icon(Icons.edit),
+            ),
+          )
+        ],
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
