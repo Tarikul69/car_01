@@ -1,5 +1,6 @@
 import 'package:car_01/login-registration/login.dart';
 import 'package:car_01/widgets/profile/edit_profile.dart';
+import 'package:car_01/widgets/profile/save_items.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -38,9 +39,12 @@ class profile extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            CircleAvatar(
-              radius: 70,
-            ),
+            Stack(children: [
+              CircleAvatar(
+                radius: 70,
+              ),
+              Icon(Icons.camera_alt_sharp)
+            ]),
             //
             SizedBox(
               height: 10,
@@ -128,8 +132,7 @@ class profile extends StatelessWidget {
                 name: "Saved Items",
                 symble: Icons.save,
                 myontap: () {
-                  //Get.toNamed(RoutesName.usersmyorder);
-                  //Get.to(myprofile());
+                  Get.to(save_items());
                 },
               ),
             ),

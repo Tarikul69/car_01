@@ -117,9 +117,12 @@ Widget favourits_card(context, img) {
                         ),
                         Text("data"),
                         Container(
-                          color: Colors.grey,
+                          color: Color.fromARGB(255, 172, 197, 255),
                           padding: EdgeInsets.all(4),
-                          child: Text("data"),
+                          child: Text(
+                            "Used",
+                            style: TextStyle(fontWeight: FontWeight.w600),
+                          ),
                         )
                       ],
                     )
