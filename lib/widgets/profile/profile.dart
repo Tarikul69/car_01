@@ -1,4 +1,5 @@
 import 'package:car_01/login-registration/login.dart';
+import 'package:car_01/widgets/favourites/favourits.dart';
 import 'package:car_01/widgets/profile/edit_profile.dart';
 import 'package:car_01/widgets/profile/save_items.dart';
 import 'package:flutter/cupertino.dart';
@@ -119,8 +120,7 @@ class profile extends StatelessWidget {
                 name: "Favourit",
                 symble: Icons.favorite_border_sharp,
                 myontap: () {
-                  //Get.toNamed(RoutesName.usersmyorder);
-                  //Get.to(myprofile());
+                  Get.to(favourits());
                 },
               ),
             ),

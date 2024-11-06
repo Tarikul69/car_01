@@ -1,3 +1,4 @@
+import 'package:car_01/widgets/home/appointment.dart';
 import 'package:car_01/widgets/home/recent_search.dart';
 import 'package:flutter/material.dart';
 import 'package:car_01/components/card.dart';
@@ -25,6 +26,20 @@ class home extends StatelessWidget {
           Icon(Icons.message),
           Icon(Icons.notifications),
         ],
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Get.to(appointment());
+        },
+        icon: Icon(
+          Icons.car_repair,
+          color: Colors.white,
+        ),
+        backgroundColor: Color.fromARGB(255, 14, 18, 68),
+        label: Text(
+          "Appointment",
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+        ),
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
