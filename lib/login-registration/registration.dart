@@ -128,7 +128,7 @@ class registration extends StatelessWidget {
                   ),
                   padding: EdgeInsets.all(16)),
               child: Text(
-                "Login",
+                "Registration",
                 style: TextStyle(
                   color: Color.fromARGB(255, 248, 247, 247),
                   fontWeight: FontWeight.bold,

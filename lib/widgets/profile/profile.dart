@@ -1,5 +1,6 @@
 import 'package:car_01/login-registration/login.dart';
 import 'package:car_01/widgets/favourites/favourits.dart';
+import 'package:car_01/widgets/profile/change_password.dart';
 import 'package:car_01/widgets/profile/edit_profile.dart';
 import 'package:car_01/widgets/profile/save_items.dart';
 import 'package:flutter/cupertino.dart';
@@ -42,8 +43,7 @@ class profile extends StatelessWidget {
           children: [
             Stack(children: [
               CircleAvatar(
-                radius: 70,
-              ),
+                  radius: 70, backgroundImage: AssetImage('assets/man.jpg')),
               Icon(Icons.camera_alt_sharp)
             ]),
             //
@@ -94,8 +94,7 @@ class profile extends StatelessWidget {
                 name: "Password",
                 symble: Icons.password,
                 myontap: () {
-                  //Get.toNamed(RoutesName.usersmyorder);
-                  //Get.to(myprofile());
+                  Get.to(change_password());
                 },
               ),
             ),

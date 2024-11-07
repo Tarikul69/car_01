@@ -14,7 +14,8 @@ class home extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.white,
         title: ListTile(
-          leading: CircleAvatar(),
+          leading: CircleAvatar(
+              radius: 25, backgroundImage: AssetImage('assets/man.jpg')),
           title: Text(
             "Welcome Abir!",
             style: TextStyle(fontWeight: FontWeight.bold),

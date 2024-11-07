@@ -22,6 +22,7 @@ class edit_profile extends StatelessWidget {
             children: [
               Center(
                   child: CircleAvatar(
+                backgroundImage: AssetImage('assets/man.jpg'),
                 radius: 80,
               )),
               Title(
