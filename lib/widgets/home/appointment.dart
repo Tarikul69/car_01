@@ -141,13 +141,34 @@ class _appointmentState extends State<appointment> {
               ),
               Row(
                 children: [
-                  card_01(),
-                  card_01(),
+                  card_01(context),
+                  Spacer(),
+                  card_01(context),
+                  Spacer(),
+                  card_01(context),
                 ],
               ),
-              SizedBox(
-                height: 15,
+              SizedBox(height: 15),
+              Row(
+                children: [
+                  card_01(context),
+                  Spacer(),
+                  card_01(context),
+                  Spacer(),
+                  card_01(context),
+                ],
               ),
+              SizedBox(height: 15),
+              Row(
+                children: [
+                  card_01(context),
+                  Spacer(),
+                  card_01(context),
+                  Spacer(),
+                  card_01(context),
+                ],
+              ),
+              SizedBox(height: 15),
               ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
@@ -167,8 +188,9 @@ class _appointmentState extends State<appointment> {
 }
 
 //Card
-Widget card_01() {
+Widget card_01(context) {
   return Container(
+    width: MediaQuery.sizeOf(context).width / 3.5,
     padding: EdgeInsets.all(10),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(12.0),
@@ -179,7 +201,10 @@ Widget card_01() {
     ),
     child: SizedBox(
       height: 25,
-      child: Text("8.00am - 9.00am"),
+      child: Text(
+        "8.00am - 9.00am",
+        style: TextStyle(fontSize: 10, fontWeight: FontWeight.w600),
+      ),
     ),
   );
 }
