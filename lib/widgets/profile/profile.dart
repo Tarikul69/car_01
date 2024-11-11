@@ -44,7 +44,11 @@ class profile extends StatelessWidget {
             Stack(children: [
               CircleAvatar(
                   radius: 70, backgroundImage: AssetImage('assets/man.jpg')),
-              Icon(Icons.camera_alt_sharp)
+              Positioned(
+                right: 10,
+                bottom: -1,
+                child: InkWell(child: Icon(Icons.camera_alt_sharp)),
+              )
             ]),
             //
             SizedBox(

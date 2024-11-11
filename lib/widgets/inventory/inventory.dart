@@ -100,7 +100,9 @@ Widget inventory_listing(context) {
                   ),
                 ),
                 Spacer(),
-                CircleAvatar(),
+                CircleAvatar(
+                  backgroundImage: AssetImage('assets/man.jpg'),
+                ),
                 Title(
                   color: Colors.black,
                   child: Text(
