@@ -254,9 +254,10 @@ Widget upcoming_appointment(context) {
 }
 
 //####################################################
-Widget common_card(context, img) {
+Widget common_card(context, img, car_type) {
   return Container(
     color: Colors.white,
+    padding: EdgeInsets.all(0),
     width: MediaQuery.sizeOf(context).width / 1.5,
     height: MediaQuery.sizeOf(context).height / 3,
     child: Column(
@@ -270,16 +271,27 @@ Widget common_card(context, img) {
             height: MediaQuery.sizeOf(context).height / 5,
           ),
         ),
-        Text("data"),
+        Center(child: Text(car_type)),
       ],
     ),
   );
 }
 
-Widget categories(cat) {
-  return Container(
-    padding: EdgeInsets.all(10),
-    color: Color.fromARGB(255, 174, 203, 212),
-    child: Text(cat),
+Widget categories(car_type) {
+  return InkWell(
+    child: Container(
+      decoration: BoxDecoration(),
+      child: Card(
+        color: Color.fromARGB(255, 148, 151, 156),
+        elevation: 0,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            car_type,
+            style: TextStyle(fontWeight: FontWeight.w500),
+          ),
+        ),
+      ),
+    ),
   );
 }

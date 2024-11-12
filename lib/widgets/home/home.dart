@@ -122,19 +122,21 @@ class home extends StatelessWidget {
                   ),
                 ),
               ),
-              Row(
+              Wrap(
+                alignment: WrapAlignment.start,
+                spacing: 8.0,
                 children: [
                   categories("New Cars"),
-                  Spacer(),
                   categories("Used Cars"),
-                  Spacer(),
+                  categories("Eletric"),
+                  categories("Jeep"),
+                  categories("SUV's"),
+                  categories("Truck"),
                   categories("Van"),
-                  Spacer(),
-                  categories("Jeep"),
-                  Spacer(),
-                  categories("Jeep"),
+                  categories("Sedan"),
                 ],
               ),
+
               const ListTile(
                 title: Text(
                   "Recommended for you",
@@ -154,10 +156,14 @@ class home extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    common_card(context, 'assets/toyota_01.png'),
-                    common_card(context, 'assets/toyota.png'),
-                    common_card(context, 'assets/toyota_01.png'),
-                    common_card(context, 'assets/toyota.png'),
+                    common_card(
+                        context, 'assets/toyota_01.png', 'Hyundai CR-V ex-l'),
+                    common_card(
+                        context, 'assets/toyota.png', 'Hyundai CR-V ex-l'),
+                    common_card(
+                        context, 'assets/toyota_01.png', 'Hyundai CR-V ex-l'),
+                    common_card(
+                        context, 'assets/toyota.png', 'Hyundai CR-V ex-l'),
                   ],
                 ),
               ),
@@ -199,10 +205,10 @@ class home extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    common_card(context, 'assets/toyota.png'),
-                    common_card(context, 'assets/toyota_01.png'),
-                    common_card(context, 'assets/toyota.png'),
-                    common_card(context, 'assets/toyota_01.png'),
+                    common_card(context, 'assets/toyota.png', 'Hyundai'),
+                    common_card(context, 'assets/toyota_01.png', 'Hyundai'),
+                    common_card(context, 'assets/toyota.png', 'Hyundai'),
+                    common_card(context, 'assets/toyota_01.png', 'Hyundai'),
                   ],
                 ),
               ),
@@ -225,10 +231,14 @@ class home extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    common_card(context, 'assets/toyota_01.png'),
-                    common_card(context, 'assets/toyota.png'),
-                    common_card(context, 'assets/toyota_01.png'),
-                    common_card(context, 'assets/toyota.png'),
+                    common_card(context, 'assets/toyota_01.png',
+                        'Passport Black Edition'),
+                    common_card(
+                        context, 'assets/toyota.png', 'Passport Black Edition'),
+                    common_card(context, 'assets/toyota_01.png',
+                        'Passport Black Edition'),
+                    common_card(
+                        context, 'assets/toyota.png', 'Passport Black Edition'),
                   ],
                 ),
               ),
