@@ -47,6 +47,7 @@ class home extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.all(10),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
                 height: 8,
@@ -63,7 +64,7 @@ class home extends StatelessWidget {
                     suffixIcon: Icon(Icons.search),
                     hintText: 'Search by Make, Model, Year'),
               ),
-              SizedBox(height: 8),
+              //SizedBox(height: 8),
               ListTile(
                 title: Text(
                   "Featured",
@@ -134,7 +135,7 @@ class home extends StatelessWidget {
                   categories("Jeep"),
                 ],
               ),
-              ListTile(
+              const ListTile(
                 title: Text(
                   "Recommended for you",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),

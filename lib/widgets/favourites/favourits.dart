@@ -19,6 +19,7 @@ class favourits extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.all(10),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Title(
                 color: Colors.black,

@@ -220,6 +220,7 @@ class profile extends StatelessWidget {
                 ),
               ),
             ),
+            Text("A product of LogicMatrix")
           ],
         ),
       ),

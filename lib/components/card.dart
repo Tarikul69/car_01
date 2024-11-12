@@ -257,10 +257,10 @@ Widget upcoming_appointment(context) {
 Widget common_card(context, img) {
   return Container(
     color: Colors.white,
-    padding: EdgeInsets.all(0),
     width: MediaQuery.sizeOf(context).width / 1.5,
     height: MediaQuery.sizeOf(context).height / 3,
     child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Card(
           child: Image.asset(
