@@ -59,40 +59,14 @@ class profile extends StatelessWidget {
                 name: "Name",
                 symble: CupertinoIcons.person_alt,
                 myontap: () {
-                  //Get.toNamed(RoutesName.usersmyorder);
-                  //Get.to(editprofile());
+                  Get.to(edit_profile());
                 },
               ),
             ),
             SizedBox(
               height: 10,
             ),
-            Container(
-              child: profilebutton(
-                name: "Email",
-                symble: Icons.email,
-                myontap: () {
-                  //Get.toNamed(RoutesName.usersmyorder);
-                  //Get.to(myprofile());
-                },
-              ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Container(
-              child: profilebutton(
-                name: "Phone Number",
-                symble: CupertinoIcons.phone_circle_fill,
-                myontap: () {
-                  //Get.toNamed(RoutesName.usersmyorder);
-                  //Get.to(changepassword());
-                },
-              ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
+
             Container(
               child: profilebutton(
                 name: "Password",

@@ -75,6 +75,7 @@ class change_password extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 //Get.offAll(navigationbar());
+                showPopup(context);
               },
               style: ElevatedButton.styleFrom(
                   fixedSize: Size(MediaQuery.of(context).size.width, 60),
@@ -84,7 +85,7 @@ class change_password extends StatelessWidget {
                   ),
                   padding: EdgeInsets.all(16)),
               child: Text(
-                "Registration",
+                "Change Password",
                 style: TextStyle(
                   color: Color.fromARGB(255, 248, 247, 247),
                   fontWeight: FontWeight.bold,
@@ -97,4 +98,30 @@ class change_password extends StatelessWidget {
       ),
     );
   }
+}
+
+void showPopup(BuildContext context) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text("Change Password"),
+        content: Text("Are you sure you want to change password"),
+        actions: [
+          TextButton(
+            child: Text("Yes"),
+            onPressed: () {
+              Navigator.of(context).pop(); // Close the popup
+            },
+          ),
+          TextButton(
+            child: Text("No"),
+            onPressed: () {
+              Navigator.of(context).pop(); // Close the popup
+            },
+          ),
+        ],
+      );
+    },
+  );
 }

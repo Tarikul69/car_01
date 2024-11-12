@@ -28,7 +28,7 @@ class edit_profile extends StatelessWidget {
               Title(
                 color: Colors.black,
                 child: Text(
-                  "Lone Amount",
+                  "Name",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 ),
               ),
@@ -40,8 +40,50 @@ class edit_profile extends StatelessWidget {
                         Radius.circular(6),
                       ),
                     ),
-                    prefixIcon: Icon(Icons.monetization_on),
-                    hintText: 'Enter Amount'),
+                    prefixIcon: Icon(Icons.person),
+                    hintText: 'Enter Your Name'),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Title(
+                color: Colors.black,
+                child: Text(
+                  "Email",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                ),
+              ),
+              TextFormField(
+                obscureText: true,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(6),
+                      ),
+                    ),
+                    prefixIcon: Icon(Icons.email),
+                    hintText: 'Enter Email Address'),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Title(
+                color: Colors.black,
+                child: Text(
+                  "Phone",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                ),
+              ),
+              TextFormField(
+                obscureText: true,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(6),
+                      ),
+                    ),
+                    prefixIcon: Icon(Icons.phone),
+                    hintText: 'Enter Phone Number'),
               ),
               SizedBox(
                 height: 10,
@@ -61,49 +103,7 @@ class edit_profile extends StatelessWidget {
                         Radius.circular(6),
                       ),
                     ),
-                    prefixIcon: Icon(Icons.monetization_on),
-                    hintText: 'Enter Amount'),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Title(
-                color: Colors.black,
-                child: Text(
-                  "Lone Amount",
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-                ),
-              ),
-              TextFormField(
-                obscureText: true,
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(6),
-                      ),
-                    ),
-                    prefixIcon: Icon(Icons.monetization_on),
-                    hintText: 'Enter Amount'),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Title(
-                color: Colors.black,
-                child: Text(
-                  "Lone Amount",
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-                ),
-              ),
-              TextFormField(
-                obscureText: true,
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(6),
-                      ),
-                    ),
-                    prefixIcon: Icon(Icons.monetization_on),
+                    prefixIcon: Icon(Icons.phone),
                     hintText: 'Enter Amount'),
               ),
               SizedBox(

@@ -1,4 +1,6 @@
+import 'package:car_01/widgets/finance/notification.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class inventory extends StatelessWidget {
   const inventory({super.key});
@@ -15,7 +17,11 @@ class inventory extends StatelessWidget {
         actions: [
           Padding(
             padding: const EdgeInsets.all(10),
-            child: Icon(Icons.notifications),
+            child: InkWell(
+                onTap: () {
+                  Get.to(notification());
+                },
+                child: Icon(Icons.notifications)),
           )
         ],
       ),

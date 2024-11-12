@@ -1,5 +1,8 @@
+import 'package:car_01/widgets/finance/notification.dart';
 import 'package:car_01/widgets/home/appointment.dart';
 import 'package:car_01/widgets/home/recent_search.dart';
+import 'package:car_01/widgets/message/message.dart';
+import 'package:car_01/widgets/message/message_list.dart';
 import 'package:flutter/material.dart';
 import 'package:car_01/components/card.dart';
 import 'package:get/get.dart';
@@ -23,9 +26,18 @@ class home extends StatelessWidget {
           subtitle: Text("Texas, USA"),
         ),
         actions: [
-          Icon(Icons.pages),
-          Icon(Icons.message),
-          Icon(Icons.notifications),
+          InkWell(
+              onTap: () {
+                Get.to(message_list());
+              },
+              child: Icon(Icons.message)),
+          InkWell(
+            onTap: () {
+              Get.to(notification());
+            },
+            child: Icon(Icons.notifications),
+          ),
+          SizedBox(width: 15)
         ],
       ),
       floatingActionButton: FloatingActionButton.extended(
